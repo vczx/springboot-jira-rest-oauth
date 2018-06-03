@@ -1,0 +1,19 @@
+jira:
+  oauth :
+    consumerKey: OauthKey
+    privateKey: MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAMUmZCoiJHpxPG1i9DXe33IvKnCWAs1wXN0HH+9C+KS5RQnQwATdHncgmRzRYTytsMJFA6wPJYBuXJ2J9OXhbvEjNcTIUVb+VBiSFZ40xWpDtgxjIBWfcr1/T21maAhKGOAe4bi1I8mRuvK52ZIvYCKsb0mx7i/C8/qzTpy/WlqtAgMBAAECgYArncG9PI57dD/dJ25F2MfweBTYkaePEdPJpoDfKx7dOovWjxNcQBs0WcbmBECR7w9S+3fDghpW3pOo2tOOZCBp3vpgMuQz4654MPagJ2G5TfIAmQDEKYA0hlzskvzZA4S1LXiuBP6MoUxGvPt2z5IlSTMCv6bXGq0vV6rL3nGaFQJBAPbiq9Vz+XYaaHIeM7wGdRNkFDUp8kHGVJNbdQNZL3vusVTBa3fIBWQQpFrNuLD4Tiyi0mm1mPThw0bu8N4eErMCQQDMbarNrFrnQ2s9WZVXXB9yQuqnlwUvuZ3K5G8KGP/RygyRfKvZLwga7viglU7ofGb8+i3j9SnkJ3l1+fGHsQ0fAkEA8QI8bsala0bCWUzkghPnrINROsj1BoK/Q47PfvJMaXaNREkBSVBI+vNIDqCvQItVfTuBntI5PC08PX26Q4smAwJBAMjrUGBs8bsyTAg0L894v39xvWeRyosph6iN84SdJXFvgALN4ajHzNOL49kQZkmhWydwTAIsR0vycDI/wd93aEkCQHc864O4pb+Rqcro7QZte8UfVwdTmlAzjk8lqny8OWR2VIYDECgvgz9BSKs72ES2wlGfuM+KeMD3uFlE/bC6/gM=
+    accessToken: ovW1a85DYe5XfdokxTOK7Pm2Pqhn4sbV
+    requestToken: c3PdAO6nV4izFnRKcJXqfz8vUTDkB5QI
+    secret: KXBcdb
+  url:
+    home: "http://192.168.1.118:9090"
+    accessTokenUrl: ${jira.url.home}/plugins/servlet/oauth/access-token
+    requestTokenUrl: ${jira.url.home}/plugins/servlet/oauth/request-token
+    authorizationUrl: ${jira.url.home}/plugins/servlet/oauth/authorize
+    createMeta: ${jira.url.home}/rest/api/2/issue/createmeta
+server:
+  port: 8081
+  servlet:
+    context-path: /api
+
+
